@@ -1,4 +1,7 @@
 <?php
+//Crear función 
+
+//1.Activa el modo estricto
 declare(strict_types=1); 
 
 //2.Creando Función restarNumeros con 2 parametros tipo int
@@ -8,5 +11,9 @@ function restarNumeros(int $num1, int $num2): string{
 return "El resultado de la resta es: " . $num1 - $num2;
 }
 //5.Llama la función y muestra el resultado 
-restarNumeros(10,5);
+echo restarNumeros(2,7);
+
 //6.
+/*PHP fatak Error por que espera dos strings*/
+	
+?>
