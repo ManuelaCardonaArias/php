@@ -8,8 +8,9 @@ $v_array=["😊","😂","😘"];
 $v_null=null;
 
 //Creo un array asociativo que las contenga a todas
-$allVariables=['Entero'=>$v_int,'Double'=>$v_double,'Booleano'=>$v_booleano,'Cadena'=>$v_cadena,'Array'=>$v_array,'Null'=>$null];
+$allVariables=['Entero'=>$v_int,'Double'=>$v_double,'Booleano'=>$v_booleano,'Cadena'=>$v_cadena,'Array'=>$v_array,'Null'=>$v_null];
 //2. Recorro las variables con un bucle
 foreach ($allVariables as $nombre => $valor) {
-    echo "Valor:. $valor. | Tipo:.$nombre";
+    echo "Tipo: ".gettype($valor). "| Valor: $valor \n";
 }
+?>
