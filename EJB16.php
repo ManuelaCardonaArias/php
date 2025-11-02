@@ -44,4 +44,5 @@ generarVariblesDinamicas();
   echo "Edad: ".$edad."<br>";
   echo "Pais: ".$pais."<br>";
   
+  
 ?> 
