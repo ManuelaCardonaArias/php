@@ -13,7 +13,7 @@ echo "<hr>";
     $resultado=$num1*2;
     echo "El resultado es: ".$resultado;
  }
- echo $resultado; //causa error porque la variable no es global, es local
+ //echo $resultado; //causa error porque la variable no es global, es local
  multiplicarPorDos(5,5);
 
  echo "<hr>";
@@ -45,4 +45,29 @@ echo "<hr>";
  compararContadores();
  compararContadores();
 
+ echo "<hr>";
+ //EJ #5
+//Declarando y definiendo variable global
+ $saludo="¡Hola, mundo!";
+//creando función saludo
+ function mostrarSaludoGlobal(){
+global $saludo;//accediendo a la variable
+   echo $saludo;
+ }
+ //Llamada de función para mpstrar saludo
+mostrarSaludoGlobal();
+echo "<hr>";
+
+//EJ #6
+//definiendo variable global
+$factor=10;
+//Creando función calcularProducto
+function calcularProducto($num){
+   //accediendo a variable local
+   $producto=$num*$GLOBALS["factor"];
+   return print $producto."<br>";
+}
+calcularProducto(5);
+calcularProducto(8);
+calcularProducto(18);
 ?>
