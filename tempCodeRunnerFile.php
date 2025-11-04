@@ -1,4 +1,5 @@
 <?php
-function saludarGlobal($nombre){
-    echo "".$nombre."";
+function verificarLogin(string $usr, string $pwr){
+    return $usr."".$pwr;
 }
+echo verificarLogin(0,0);
